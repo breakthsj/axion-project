@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "axion-project"
+version = "0.1.0"
+description = "Reinforcement Learning Project with Engineering Environment"
+authors = ["LEO"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+# 기존 데이터 분석/시각화 도구
+numpy = ">=1.21.6,<2.0.0"
+pandas = ">=2.2.3,<3.0.0"
+matplotlib = ">=3.10.0,<4.0.0"
+scikit-learn = ">=1.6.1,<2.0.0"
+pyvista = ">=0.44.2,<0.45.0"
+ipython = ">=8.32.0,<9.0.0"
+ipykernel = ">=6.29.5,<7.0.0"
+jupyter = ">=1.1.1,<2.0.0"
+ipyvtklink = ">=0.2.3,<0.3.0"
+ipywidgets = "7.7.1"
+
+# RL 관련 기본 의존성
+torch = ">=2.5.1"
+gymnasium = ">=0.28.1"
+stable-baselines3 = "2.0.0"
+
+# 실험 모니터링
+tensorboard = ">=2.10.0"
+wandb = ">=0.13.11"
+
+# 유틸리티
+rich = "<12.0"
+tyro = ">=0.5.10"
+pyyaml = ">=6.0.1"
+moviepy = ">=1.0.3"
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=7.1.3"
+pygame = "2.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
